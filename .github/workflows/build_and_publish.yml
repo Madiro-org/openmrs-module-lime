@@ -12,7 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
         matrix:
-          java: [ '8', '11', '17' ]
+          # 8 is the bytecode baseline the .omod must stay loadable on; 17 is the JVM
+          # the OpenMRS 2.8.x containers ship; 21 and 25 are the newer LTS releases the
+          # module must keep building and testing green against.
+          java: [ '8', '11', '17', '21', '25' ]
 
     steps:
       - uses: actions/checkout@v4
@@ -51,7 +54,7 @@ jobs:
   #     - uses: actions/setup-java@v4
   #       with:
   #         java-version: '8'
-  #         distribution: 'adopt'
+  #         distribution: 'temurin'
 
   #     - name: Set settings.xml
   #       uses: s4u/maven-settings-action@v3.0.0
