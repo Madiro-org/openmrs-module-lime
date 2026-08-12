@@ -15,7 +15,7 @@
 	<description>OMOD project for LIME EMR dependencies and customizations</description>
 
 	<properties>
-		<openMRSVersion>2.8.7</openMRSVersion>
+		<openMRSVersion>2.8.8</openMRSVersion>
 	</properties>
 
 	<dependencies>
@@ -36,22 +36,27 @@
 			<version>${openMRSVersion}</version>
 			<scope>test</scope>
 		</dependency>
+		<!--
+			Unused today: this module has no tests. Pinned to match the api module and to
+			work across the full Java 8-25 build matrix, so adding the first omod test
+			doesn't require a dependency fight first.
+		-->
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-			<version>1.10.19</version>
+			<version>3.9.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.powermock</groupId>
-			<artifactId>powermock-api-mockito</artifactId>
-			<version>1.6.5</version>
+			<artifactId>powermock-api-mockito2</artifactId>
+			<version>2.0.9</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.powermock</groupId>
 			<artifactId>powermock-module-junit4</artifactId>
-			<version>1.6.5</version>
+			<version>2.0.9</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

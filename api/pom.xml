@@ -13,7 +13,7 @@
 	<description>API project for LIME EMR dependencies and customizations</description>
 
 	<properties>
-		<openMRSVersion>2.8.7</openMRSVersion>
+		<openMRSVersion>2.8.8</openMRSVersion>
 		<idgenModuleVersion>4.11.0-SNAPSHOT</idgenModuleVersion>
 		<appointmentsModuleVersion>2.1.0-SNAPSHOT</appointmentsModuleVersion>
 	</properties>
