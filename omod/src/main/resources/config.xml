@@ -4,7 +4,7 @@
 
 	<id>lime-emr</id>
 	<name>MSF-OCG LIME EMR Module</name>
-	<version>0.1.0</version>
+	<version>${project.parent.version}</version>
 	<package>org.openmrs.module.lime</package>
 	<author>msf</author>
 	<description>
